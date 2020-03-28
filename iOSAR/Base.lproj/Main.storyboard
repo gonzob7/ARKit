@@ -18,12 +18,26 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-p8-yz7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb7-Dv-XVB">
+                                <rect key="frame" x="20" y="762" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5w5-ni-UKf"/>
+                                    <constraint firstAttribute="height" constant="80" id="eA8-Qp-nEi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttd-ug-5hN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PNz-xP-zZP"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T7d-p1-rmw"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tjy-tL-9nF"/>
+                            <constraint firstItem="Wb7-Dv-XVB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b3u-yE-0YD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wb7-Dv-XVB" secondAttribute="bottom" constant="20" id="f4N-aL-ece"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rik-kK-erM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

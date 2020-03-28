@@ -23,7 +23,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        let node = SCNNode()
+        
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.white
+        node.position = SCNVector3(0, 0, 0)
+    
+        self.sceneView.scene.rootNode.addChildNode(node)
+    }
+    
 
 }
 
