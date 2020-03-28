@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ARKit
+
+let configuration = ARWorldTrackingConfiguration()
 
 class ViewController: UIViewController {
 
