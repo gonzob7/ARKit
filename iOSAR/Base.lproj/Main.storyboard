@@ -30,14 +30,28 @@
                                     <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttd-ug-5hN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDp-5Q-B6Y">
+                                <rect key="frame" x="314" y="762" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0Y6-oC-hbK"/>
+                                    <constraint firstAttribute="width" constant="80" id="Nja-df-fS9"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7C-cn-QP2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDp-5Q-B6Y" secondAttribute="trailing" constant="20" id="LxE-3N-8MC"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PNz-xP-zZP"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T7d-p1-rmw"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tjy-tL-9nF"/>
                             <constraint firstItem="Wb7-Dv-XVB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b3u-yE-0YD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wb7-Dv-XVB" secondAttribute="bottom" constant="20" id="f4N-aL-ece"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VDp-5Q-B6Y" secondAttribute="bottom" constant="20" id="kUO-Hg-qmP"/>
                             <constraint firstItem="Unz-p8-yz7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rik-kK-erM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
