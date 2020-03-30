@@ -13,9 +13,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var sceneView: ARSCNView!
     
+    @IBOutlet weak var addCircleBtn: UIButton!
+    
+    @IBOutlet weak var resetBtn: UIButton!
+    
+    
     let configuration = ARWorldTrackingConfiguration()
     
     override func viewDidLoad() {
+        
+        self.addCircleBtn.layer.cornerRadius = 40
+        self.resetBtn.layer.cornerRadius = 40
+        
         self.sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         self.sceneView.session.run(configuration)
         self.sceneView.autoenablesDefaultLighting = true
